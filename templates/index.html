@@ -1,0 +1,457 @@
+<!doctype html>
+                        <html>
+                            <head>
+                                <meta charset='utf-8'>
+                                <meta name='viewport' content='width=device-width, initial-scale=1'>
+                                <title>Snippet - BBBootstrap</title>
+                                <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
+                                <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+                                <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+                                    <script src="{{ mapdata }}"></script>
+    <script src="{{ usmap }}"></script>
+    <script src="{{ select }}"></script>
+	<script>
+  simplemaps_select.map=simplemaps_usmap; // tells the script which map to work with
+  
+  simplemaps_select.selected_color='purple';
+   simplemaps_select.max=1;
+ 
+</script>
+    <script>
+        // Include select.js here
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var map = simplemaps_usmap;
+
+            document.getElementById('map').addEventListener('click', function(event) {
+                var selectedState = simplemaps_select.selected[0];
+                document.getElementById('selectedStateInput').value = selectedState;
+            });
+        });
+    </script>
+								<style>::-webkit-scrollbar {
+                                  width: 8px;
+                                }
+                                /* Track */
+                                ::-webkit-scrollbar-track {
+                                  background: #f1f1f1; 
+                                }
+                                 
+                                /* Handle */
+                                ::-webkit-scrollbar-thumb {
+                                  background: #888; 
+                                }
+                                
+                                /* Handle on hover */
+                                ::-webkit-scrollbar-thumb:hover {
+                                  background: #555; 
+                                } body {
+    background: #eee
+}
+
+#Form {
+    background-color: #ffffff;
+    margin: 0px auto;
+    font-family: Raleway;
+    padding: 40px;
+    border-radius: 10px
+}
+
+#register{
+
+  color: #6A1B9A;
+}
+
+h1 {
+    text-align: center
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    -webkit-appearance: none;
+}
+
+select {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    -webkit-appearance: none;
+}
+
+.tab input:focus{
+
+  border:1px solid #6a1b9a !important;
+  outline: none;
+}
+
+input.invalid {
+ 
+    border:1px solid #e03a0666;
+}
+
+.tab {
+    display: none
+}
+submit {
+    background-color: #6A1B9A;
+    color: #ffffff;
+    border: none;
+	    font-family: Raleway;
+    cursor: pointer
+}
+
+button {
+    background-color: #6A1B9A;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer
+}
+
+button:hover {
+    opacity: 0.8
+}
+submit:hover {
+    opacity: 0.8
+}
+button:focus{
+
+  outline: none !important;
+}
+
+#prevBtn {
+    background-color: #bbbbbb
+}
+
+
+.all-steps{
+      text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.step {
+       height: 40px;
+    width: 40px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #6a1b9a;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1
+}
+
+
+.step.finish {
+   color: #fff;
+   background: #6a1b9a;
+   opacity: 1;
+
+}
+
+
+
+.all-steps {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.thanks-message {
+    display: none
+}</style>
+                                </head>
+                                <body className='snippet-body'>
+                                <div class="container mt-5">
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-8">
+            
+                <h1 id="register">Credit Evaluator</h1>
+                <div class="all-steps" id="all-steps"> 
+				                  <span class="step"><i class="fa fa-file-text"></i></span> 
+                  <span class="step"><i class="fa fa-line-chart"></i></span>
+                  <span class="step"><i class="fa fa-graduation-cap"></i></span>
+                  <span class="step"><i class="fa fa-home"></i></span>
+                  <span class="step"><i class="fa fa-file-text"></i></span> 
+                  <span class="step"><i class="fa fa-line-chart"></i></span>
+                  <span class="step"><i class="fa fa-graduation-cap"></i></span>
+                  <span class="step"><i class="fa fa-home"></i></span>
+                  <span class="step"><i class="fa fa-money"></i></span>
+                  <span class="step"><i class="fa fa-check-circle"></i></span>
+				  <span class="step"><i class="fa fa-calendar"></i></span> 
+                  <span class="step"><i class="fa fa-handshake-o"></i></span>
+                  <span class="step"><i class="fa fa-flag"></i></span>
+                  <span class="step"><i class="fa fa-map"></i></span>
+                  <span class="step"><i class="fa fa-percent"></i></span>
+                  <span class="step"><i class="fa fa-history"></i></span>
+				  <span class="step"><i class="fa fa-search"></i></span> 
+                  <span class="step"><i class="fa fa-list"></i></span>
+                  <span class="step"><i class="fa fa-credit-card"></i></span>
+                  <span class="step"><i class="fa fa-usd"></i></span>
+                  <span class="step"><i class="fa fa-area-chart"></i></span>
+                  <span class="step"><i class="fa fa-calendar-check-o"></i></span>
+				  <span class="step"><i class="fa fa-credit-card-alt"></i></span> 
+                  <span class="step"><i class="fa fa-balance-scale"></i></span>
+                  <span class="step"><i class="fa fa-pie-chart"></i></span>
+
+
+                </div>
+<form id="Form" action="/submit_form" method="POST">
+    <div class="tab">
+        <h6>Address State</h6>
+		<input type="hidden" id="selectedStateInput" name="addr_state" >
+        <p><div id="map"></div> 
+		</p>
+    </div>
+    <div class="tab">
+        <h6>The loan amount</h6>
+        <p><input placeholder="Enter the loan amount" oninput="this.className = ''" name="loan_amnt"></p>
+    </div>
+	    <div class="tab">
+        <h6>total recovery late fee</h6>
+        <p><input placeholder="Enter the total recovery late fee" oninput="this.className = ''" name="total_rec_late_fee"></p>
+    </div>    
+	<div class="tab">
+        <h6>recoveries</h6>
+        <p><input placeholder="Enter the recoveries" oninput="this.className = ''" name="recoveries"></p>
+    </div>
+	    <div class="tab">
+        <h6>collection of the recovery fee</h6>
+        <p><input placeholder="Enter the collection of the recovery fee" oninput="this.className = ''" name="collection_recovery_fee"></p>
+    </div>
+
+    <div class="tab">
+        <h6>Term</h6>
+        <p><input placeholder="Enter Term" oninput="this.className = ''" name="term"></p>
+    </div>
+    <div class="tab">
+        <h6>Interest Rate</h6>
+        <p><input placeholder="Enter Interest Rate" oninput="this.className = ''" name="int_rate"></p>
+    </div>
+    <div class="tab">
+        <h6>Grade</h6>
+        <p>        
+		<select name="grade" onchange="this.className = ''">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+			<option value="D">D</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+			<option value="G">G</option>
+            <!-- Add other grade options as needed -->
+        </select></p>
+    </div>
+    <div class="tab">
+        <h6>Home Ownership</h6>
+        <p>		<select name="home_ownership" onchange="this.className = ''">
+            <option value="RENT">RENT</option>
+            <option value="MORTGAGE">MORTGAGE</option>
+            <option value="OWN">OWN</option>
+			<option value="OTHER">OTHER</option>
+            <option value="NONE">NONE</option>
+            <option value="ANY">ANY</option>
+        </select></p>
+    </div>
+    <div class="tab">
+        <h6>Annual Income</h6>
+        <p><input placeholder="Enter Annual Income" oninput="this.className = ''" name="annual_inc"></p>
+    </div>
+    <div class="tab">
+        <h6>Verification Status</h6>
+        <p><select name="verification_status" onchange="this.className = ''">
+            <option value="A">Not Verified</option>
+            <option value="B">Source Verified</option>
+            <option value="C">Verified</option>
+        </select></p>
+    </div>
+    <div class="tab">
+        <h6>Issue Date</h6>
+        <p><input placeholder="Enter Issue Date" oninput="this.className = ''" name="issue_d"></p>
+    </div>
+    <div class="tab">
+        <h6>emp_length</h6>
+        <p><input placeholder="Enter emp_length" oninput="this.className = ''" name="emp_length"></p>
+    </div>
+    <div class="tab">
+        <h6>Purpose</h6>
+        <p><select name="purpose" onchange="this.className = ''">
+            <option value="small_business">small_business</option>
+            <option value="renewable_energy">renewable_energy</option>
+            <option value="moving">moving</option>
+			<option value="other">other</option>
+            <option value="house">house</option>
+            <option value="medical">medical</option>
+			<option value="wedding">wedding</option>
+            <option value="vacation">vacation</option>
+            <option value="home_improvement">home_improvement</option>
+			<option value="major_purchase">major_purchase</option>
+            <option value="car">car</option>
+            <option value="credit_card">credit_card</option>
+        </select></p>
+    </div>
+
+    <div class="tab">
+        <h6>Debt-to-Income (DTI)</h6>
+        <p><input placeholder="Enter DTI" oninput="this.className = ''" name="dti"></p>
+    </div>
+    <div class="tab">
+        <h6>Earliest Credit Line</h6>
+        <p><input placeholder="Enter Earliest Credit Line" oninput="this.className = ''" name="earliest_cr_line"></p>
+    </div>
+    <div class="tab">
+        <h6>Inquiries Last 6 Months</h6>
+        <p><input placeholder="Enter Inquiries Last 6 Months" oninput="this.className = ''" name="inq_last_6mths"></p>
+    </div>
+    <div class="tab">
+        <h6>Initial List Status</h6>
+        <p><input placeholder="Enter Initial List Status" oninput="this.className = ''" name="initial_list_status"></p>
+    </div>
+    <div class="tab">
+        <h6>Outstanding Principle</h6>
+        <p><input placeholder="Enter Outstanding Principle" oninput="this.className = ''" name="out_prncp"></p>
+    </div>
+    <div class="tab">
+        <h6>Total Payment</h6>
+        <p><input placeholder="Enter Total Payment" oninput="this.className = ''" name="total_pymnt"></p>
+    </div>
+    <div class="tab">
+        <h6>Total Received Interest</h6>
+        <p><input placeholder="Enter Total Received Interest" oninput="this.className = ''" name="total_rec_int"></p>
+    </div>
+    <div class="tab">
+        <h6>Last Payment Date</h6>
+        <p><input placeholder="Enter Last Payment Date" oninput="this.className = ''" name="last_pymnt_d"></p>
+    </div>
+    <div class="tab">
+        <h6>Last Credit Pull Date</h6>
+        <p><input placeholder="Enter Last Credit Pull Date" oninput="this.className = ''" name="last_credit_pull_d"></p>
+    </div>
+    <div class="tab">
+        <h6>Total Current Balance</h6>
+        <p><input placeholder="Enter Total Current Balance" oninput="this.className = ''" name="tot_cur_bal"></p>
+    </div>
+    <div class="tab">
+        <h6>Total Revolving High Limit</h6>
+        <p><input placeholder="Enter Total Revolving High Limit" oninput="this.className = ''" name="total_rev_hi_lim"></p>
+    </div>
+	
+	<div class="tab">
+	<p>
+	<input type="submit" id="submitBtn" value="view score">
+	</p>
+	</div>
+	</form>
+                <div class="thanks-message text-center" id="text-message"> <img src="https://i.imgur.com/O18mJ1K.png" width="100" class="mb-4">
+                    <h3>Thankyou for your feedback!</h3> <span>Thanks for your valuable information. It helps us to improve our services!</span>
+                </div>
+                <div style="overflow:auto;" id="nextprevious">
+                    <div style="float:right;">
+                      <button type="button" id="prevBtn" onclick="nextPrev(-1)"><i class="fa fa-angle-double-left"></i></button> 
+                      <button type="button" id="nextBtn" onclick="nextPrev(1)"><i class="fa fa-angle-double-right"></i></button> </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+                                <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js'></script>
+                                <script type='text/javascript' src='#'></script>
+                                <script type='text/javascript' src='#'></script>
+                                <script type='text/javascript' src='#'></script>
+                                <script type='text/javascript'>var currentTab = 0;
+              document.addEventListener("DOMContentLoaded", function(event) {
+
+
+              showTab(currentTab);
+
+              });
+
+              function showTab(n) {
+              var x = document.getElementsByClassName("tab");
+              x[n].style.display = "block";
+              if (n == 0) {
+              document.getElementById("prevBtn").style.display = "none";
+              } else {
+              document.getElementById("prevBtn").style.display = "inline";
+              }
+              if (n == (x.length - 1)) {
+              document.getElementById("nextBtn").innerHTML = '<i class="fa fa-angle-double-right"></i>';
+              } else {
+              document.getElementById("nextBtn").innerHTML = '<i class="fa fa-angle-double-right"></i>';
+              }
+              fixStepIndicator(n)
+              }
+
+              function nextPrev(n) {
+              var x = document.getElementsByClassName("tab");
+              if (n == 1 && !validateForm()) return false;
+              x[currentTab].style.display = "none";
+              currentTab = currentTab + n;
+              if (currentTab >= x.length) {
+            
+              document.getElementById("nextprevious").style.display = "none";
+              document.getElementById("all-steps").style.display = "none";
+              document.getElementById("register").style.display = "none";
+              document.getElementById("text-message").style.display = "block";
+
+
+
+
+              }
+              showTab(currentTab);
+              }
+
+              function validateForm() {
+                   var x, y, i, valid = true;
+                   x = document.getElementsByClassName("tab");
+                   y = x[currentTab].getElementsByTagName("input");
+                   for (i = 0; i < y.length; i++) {
+                       if (y[i].value == "") {
+                           y[i].className += " invalid";
+                           valid = false;
+                       }
+
+
+                   }
+                   if (valid) {
+                       document.getElementsByClassName("step")[currentTab].className += " finish";
+                   }
+                   return valid;
+               }
+
+               function fixStepIndicator(n) {
+                   var i, x = document.getElementsByClassName("step");
+                   for (i = 0; i < x.length; i++) {
+                       x[i].className = x[i].className.replace(" active", "");
+                   }
+                   x[n].className += " active";
+               }</script>
+                                <script type='text/javascript'>var myLink = document.querySelector('a[href="#"]');
+                                myLink.addEventListener('click', function(e) {
+                                  e.preventDefault();
+                                });</script>
+                            
+                                </body>
+                            </html>
