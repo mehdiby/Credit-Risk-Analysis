@@ -19,8 +19,9 @@ This project is a credit scoring model that predicts the Probability of Default 
 - etc.
 
 ## Demo
-
-[Link to a demo or showcase your project in action.]
+<p align="center">
+  <img src="demo.gif" alt="App Demo" width="300">
+</p>
 
 ## Installation Instructions
 
